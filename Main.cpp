@@ -128,10 +128,11 @@ int main() //main function
 		} while (threeroundcount != 4); //loop ends if gamerounds is equal to 4
 
 		cout << "\nYour current score: " << score << endl;
-		cout << "\nRounds played: " << gamerounds << endl;
+		cout << "\nRounds played: " << gamerounds - 1 << endl; // the minus one helps it display the accurate number
 		cout << "\nTimes asked for hint: " << hintused << endl;
 		cout << "\nWould you like to play again? Please type Y or N and press enter. ";
 		cin >> play_again; // stores input from user
+		threeroundcount = 1; // sets the three round counter back to the start
 
 	} while (play_again == "y" or play_again == "Y" or play_again == "yes" or play_again == "Yes"); //loop will run unless user types N/n/no/No
 
